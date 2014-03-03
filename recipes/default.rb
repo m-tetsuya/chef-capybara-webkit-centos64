@@ -30,5 +30,6 @@ template "/etc/profile.d/capybara.sh" do
 end
 
 gem_package 'capybara-webkit' do
+  gem_binary "/opt/rbenv/shims/gem"
   action  :install
 end
